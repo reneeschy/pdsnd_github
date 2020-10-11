@@ -25,9 +25,12 @@ def ask_user(prompt, valid_choices):
     """
     rsp = input(prompt).lower()
     while rsp not in valid_choices:
-        rsp = input('Invalid input. ' + prompt)
+        rsp = input(f'Invalid input. {prompt}')
 
     return rsp
+
+def line_break():
+    print('-'*40)
 
 def get_filters():
     """
@@ -107,7 +110,7 @@ def time_stats(df):
     print('Most popular hour:', popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    line_break()
 
 
 def station_stats(df):
@@ -130,7 +133,7 @@ def station_stats(df):
     print('Most popular station combination:', popular_start_and_end_station)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    line_break()
 
 
 def trip_duration_stats(df):
@@ -147,7 +150,7 @@ def trip_duration_stats(df):
     print ('Average travel time:', df['Trip Duration'].mean(), 'seconds')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    line_break()
 
 
 def user_stats(df):
@@ -168,7 +171,7 @@ def user_stats(df):
     print('Most common birth year:', df['Birth Year'].mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    line_break()
 
 
 def main():
