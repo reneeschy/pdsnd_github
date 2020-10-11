@@ -5,7 +5,7 @@
 Udacity Git Project
 
 ### Description
-Describe what your project is about and what it does
+Tracks bike usage over three cities
 
 ### Files used
 Include the files used
