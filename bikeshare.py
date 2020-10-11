@@ -25,7 +25,7 @@ def ask_user(prompt, valid_choices):
     """
     rsp = input(prompt).lower()
     while rsp not in valid_choices:
-        rsp = input('Invalid input. ' + prompt)
+        rsp = input(f'Invalid input. {prompt}')
 
     return rsp
 
