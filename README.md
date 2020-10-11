@@ -12,5 +12,6 @@ Tracks bike usage over three cities
 2. A .csv file containing bikeshare information
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+- stackoverflow.com
+- pandas.pydata.org
+- git-scm.com
